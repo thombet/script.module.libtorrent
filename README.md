@@ -2,26 +2,23 @@ python-libtorrent for Kodi
 ==================
 script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent
 
-**Support**
-- Russian forum: http://xbmc.ru/forum/showthread.php?t=4728
+This version of the add-on is based on [DiMartinoXBMC initial version](https://github.com/DiMartinoXBMC/script.module.libtorrent).
 
-**Used in projects**
-- [Torrenter v2](https://github.com/DiMartinoXBMC/plugin.video.torrenter)
-- [YATP](https://github.com/romanvm/kodi.yatp)
-- [pyrrent2http](https://github.com/inpos/script.module.pyrrent2http)
+Please have a look to the [wiki](../../wiki) for more information (including
+status of the library for each system).
 
-**Usage**
+# Usage
 
-Add module to your repository and requires in addon.xml:
+Add this line in the node `requires` of the addon.xml file:
 ```python
-<import addon="script.module.libtorrent"/>
+<import addon="script.module.libtorrent" version="X.Y.Z"/>
 ```
 
-Use it in any python file:
+Then import libtorrent in the add-on code with:
 ```python
 from python_libtorrent import libtorrent
-```
+``` 
 
-**License**
+# License
 
 MIT License
