@@ -1,0 +1,76 @@
+   Config results:
+  -=-=-=-=-=-=-=-=-
+
+Package:
+  name:                 libtorrent-rasterbar
+  version:              1.1.11
+  git revision:         25a1f1299
+
+Build environment:
+  build system:         x86_64-apple-darwin15.6.0
+  host system:          x86_64-apple-darwin15.6.0
+  target system:        x86_64-apple-darwin15.6.0
+
+Compiler and linker flags:
+  CPPFlags:             -I<user_specific_folder>/boost-build/include
+  CFlags:               -D_THREAD_SAFE  -g -O2 -fvisibility=hidden
+  CXXFlags:             -g -O2 -ftemplate-depth=120 -Wno-format-zero-length -fvisibility=hidden -fvisibility-inlines-hidden
+  LDFlags:              -L<user_specific_folder>/boost-build/lib  -fvisibility=hidden -fvisibility-inlines-hidden
+  Libs:                 -lboost_chrono -lboost_random
+  Defs:                 -DPACKAGE_NAME=\"libtorrent-rasterbar\" -DPACKAGE_TARNAME=\"libtorrent-rasterbar\" -DPACKAGE_VERSION=\"1.1.11\" -DPACKAGE_STRING=\"libtorrent-rasterbar\ 1.1.11\" -DPACKAGE_BUGREPORT=\"arvid@libtorrent.org\" -DPACKAGE_URL=\"http://www.libtorrent.org\" -DPACKAGE=\"libtorrent-rasterbar\" -DVERSION=\"1.1.11\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_PTHREAD=1 -DHAVE_BOOST=/\*\*/ -DHAVE_BOOST_SYSTEM=/\*\*/ -DHAVE_BOOST_CHRONO=/\*\*/ -DHAVE_BOOST_RANDOM=/\*\*/ -DNDEBUG=1 -DTORRENT_USE_OPENSSL=1 -DTORRENT_DISABLE_POOL_ALLOCATOR=1 -DHAVE_PYTHON=\"2.7\" -DHAVE_BOOST_PYTHON=/\*\*/ -DBOOST_ASIO_HASH_MAP_BUCKETS=1021 -DBOOST_EXCEPTION_DISABLE=1 -DBOOST_ASIO_ENABLE_CANCELIO=1
+
+Build options:
+  deprecated functions: yes
+  debug build:          no
+  invariant checks:     no
+  logging support:      yes
+  disk statistics:      no
+
+Features:
+  encryption support:   yes
+  dht support:          yes
+  pool allocators:      no
+
+Extra builds:
+  examples:             no
+  tests:                no
+  python bindings:      yes
+
+Pthread library:
+  CFlags:               -D_THREAD_SAFE
+  Libs:
+
+Boost libraries:
+  version:
+  CPPFlags:             -I<user_specific_folder>/boost-build/include
+  LDFlags:              -L<user_specific_folder>/boost-build/lib
+  boost.system:         -lboost_system
+  boost.chrono:         -lboost_chrono
+  boost.random:         -lboost_random
+  boost.python:         -lboost_python
+
+Python environment:
+  -automake-
+  binary:               /usr/bin/python
+  version:              2.7
+  platform:             darwin
+  prefix:               ${prefix}
+  exec_prefix:          ${exec_prefix}
+  pythondir:            ${prefix}/lib/python2.7/site-packages
+  pkgpythondir:         ${pythondir}/libtorrent-rasterbar
+  pyexecdir:            ${exec_prefix}/lib/python2.7/site-packages
+  pkgpyexecdir:         ${pyexecdir}/libtorrent-rasterbar
+
+  -m4-
+  cppflags:             -I/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
+  ldflags:
+  extra libs:           -u _PyMac_Error /System/Library/Frameworks/Python.framework/Versions/2.7/Python
+
+
+External libraries:
+  system libiconv:      no
+
+OpenSSL library:
+  OpenSSL Libs:         -lssl -lcrypto
+  OpenSSL LDFlags:      -L/usr/local/opt/openssl@1.1/lib
+  OpenSSL Includes:     -I/usr/local/opt/openssl@1.1/include
