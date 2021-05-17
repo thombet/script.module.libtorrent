@@ -1,4 +1,8 @@
-﻿1.1.7:
+﻿1.2.0:
+Add 1.1.11 for MacOS and ARMv7 with OpenSSL support
+Remove old versions which do not support HTTPS for MacOS and ARMv7
+
+1.1.7:
 Added 1.1.6 and 1.1.7 for ARM v6 by Allin
 
 1.1.1:
