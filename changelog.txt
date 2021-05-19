@@ -1,4 +1,8 @@
-﻿1.2.0:
+﻿1.3.0:
+Add 1.1.11 for Linux ARMv6 with HTTPS support
+Remove old versions which do not support HTTPS for Linux ARMv6
+
+1.2.0:
 Add 1.1.11 for MacOS and ARMv7 with OpenSSL support
 Remove old versions which do not support HTTPS for MacOS and ARMv7
 
